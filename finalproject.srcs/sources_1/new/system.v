@@ -32,29 +32,29 @@ module system(
     wire sent, received, received_2, baud;
     
     baudrate_gen baudrate_gen(clk, baud);
-//    uart_rx receiver(baud, RsRx, received, data_out);
-//    uart_tx transmitter(baud, data_in, en, sent, RsTx);
+    uart_rx receiver(baud, JB[0], received, data_out);
+    uart_tx transmitter(baud, data_in, en, sent, Tx);
 //    uart_tx transmitter(baud, btnD, data_in, en, RsTx);
 //    uart_rx receiver(baud, btnD , RsRx, data_out, received);
 //    uart_rx receiver_2(baud, btnD , JB[1], data_out_2, received_2);
     
-    uart_rx receiver(baud, btnD , JB[0], data_out, received);
-    uart_tx transmitter(baud, btnD, data_in, en, Tx);
-    
+//    uart_rx receiver(baud, btnD , JB[0], data_out, received);
+//    uart_tx transmitter(baud, btnD, data_in, en, Tx);
+    reg [7:0] data_to_vga;
     always @(posedge baud) begin
         if (en) en = 0;
         if (~last_rec & received) begin
-            data_in = data_out;
+            data_to_vga = data_out; // need to fix
             en = 1;
         end
         last_rec = received;
         if (press) begin data_in = sw[7:0]; en=1; end
     end
     
-    assign num0 = data_in[3:0];
-    assign num1 = data_in[7:4];
-    assign num2 = 0;
-    assign num3 = 0;
+    assign num0 = data_to_vga[3:0];
+    assign num1 = data_to_vga[7:4];
+    assign num2 = data_in[3:0];
+    assign num3 = data_in[7:4];
     quadSevenSeg q7seg(seg,dp,an0,an1,an2,an3,num0,num1,num2,num3,baud);
     
 
@@ -65,7 +65,7 @@ module system(
         .reset(btnD),
         .en(en),
         .rgb(rgb),
-        .data_in(data_in),
+        .data_in(data_to_vga),
         .RsTx(RsTx),
         .RsRx(RsRx),
         .JB(JB),
