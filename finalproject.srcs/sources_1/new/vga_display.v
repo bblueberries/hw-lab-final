@@ -3,8 +3,19 @@ module vga_test
 		input wire clk, reset,en,
 		output wire hsync, vsync,
 		output wire [11:0] rgb,
-		input [7:0] data_in
+		input [7:0] data_in,
+		input wire RsTx,
+		input wire RsRx,
+		input wire [1:0] JB,
+		input wire baud
 	);
+	
+//	assign JB[0] = RsTx;
+//	reg tx_start;
+	///UART/////////////////////////////////
+//	uart_tx  tx_inst (.clk(baud), .reset(reset), .tx_data(data_in), .tx_start(tx_start), .tx_out(RsTx));
+//	uart_rx  rx_inst (.clk(baud), .reset(reset), .rx_in(RsRx), .rx_data(), .rx_ready());
+//	uart_rx  rx_inst_2 (.clk(baud), .reset(reset), .rx_in(JB[1]), .rx_data(), .rx_ready());
 	
 	//VGA/////////////////////////////////////////////////////////////////////////////
 	// video status output from vga_sync to tell when to route out rgb signal to DAC

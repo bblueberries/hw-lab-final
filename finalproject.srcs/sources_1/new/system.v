@@ -5,6 +5,7 @@ module system(
     input [7:0] sw, // for inc , dec 4 7-Seg // 7 is the most left
     input btnU,
     input btnD,
+    input [1:0] JB,
     output [6:0] seg,
     output dp,
     output [3:0] an,
@@ -12,6 +13,10 @@ module system(
 	output wire hsync, vsync,
 	output wire [11:0] rgb
 );
+
+    assign JB[1] = Tx;
+    wire Tx;
+    
     wire [3:0] num3,num2,num1,num0; // left to right
   
     wire an0,an1,an2,an3;
@@ -23,11 +28,18 @@ module system(
     reg en, last_rec;
     reg [7:0] data_in;
     wire [7:0] data_out;
-    wire sent, received, baud;
+    wire [7:0] data_out_2;
+    wire sent, received, received_2, baud;
     
     baudrate_gen baudrate_gen(clk, baud);
-    uart_rx receiver(baud, RsRx, received, data_out);
-    uart_tx transmitter(baud, data_in, en, sent, RsTx);
+//    uart_rx receiver(baud, RsRx, received, data_out);
+//    uart_tx transmitter(baud, data_in, en, sent, RsTx);
+//    uart_tx transmitter(baud, btnD, data_in, en, RsTx);
+//    uart_rx receiver(baud, btnD , RsRx, data_out, received);
+//    uart_rx receiver_2(baud, btnD , JB[1], data_out_2, received_2);
+    
+    uart_rx receiver(baud, btnD , JB[0], data_out, received);
+    uart_tx transmitter(baud, btnD, data_in, en, Tx);
     
     always @(posedge baud) begin
         if (en) en = 0;
@@ -38,6 +50,7 @@ module system(
         last_rec = received;
         if (press) begin data_in = sw[7:0]; en=1; end
     end
+    
     assign num0 = data_in[3:0];
     assign num1 = data_in[7:4];
     assign num2 = 0;
@@ -52,7 +65,11 @@ module system(
         .reset(btnD),
         .en(en),
         .rgb(rgb),
-        .data_in(data_in)   
+        .data_in(data_in),
+        .RsTx(RsTx),
+        .RsRx(RsRx),
+        .JB(JB),
+        .baud(baud)
     );
 
 endmodule
