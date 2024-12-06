@@ -157,8 +157,9 @@ module vga_test
             .en2(en_sync)               // Output synchronized 'en' signal at 100 MHz
         );
 ///////////////////////////////////////////////////////////////////////////////////////////////
-always @(posedge clk or posedge reset) begin
-    if (reset) begin
+
+     always @(posedge clk) begin
+        if (reset) begin
     
         index <= 0;
         index_offset <= 0;
@@ -184,8 +185,6 @@ always @(posedge clk or posedge reset) begin
         readAscii[14] <= 7'h00;
         readAscii[15] <= 7'h00;
     end
-end
-     always @(posedge clk) begin
         if (en_sync) begin
             if(data_in[6:0] == 7'h7F) begin
                if(line_num==0)begin

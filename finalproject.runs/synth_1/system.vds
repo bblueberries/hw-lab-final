@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Dec  6 18:27:39 2024
-# Process ID: 11332
+# Start of session at: Fri Dec  6 18:37:50 2024
+# Process ID: 11060
 # Current directory: C:/finalproject/finalproject.runs/synth_1
 # Command line: vivado.exe -log system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
 # Log file: C:/finalproject/finalproject.runs/synth_1/system.vds
@@ -19,10 +19,10 @@
 # Host memory       :16841 MB
 # Swap memory       :9126 MB
 # Total Virtual     :25968 MB
-# Available Virtual :12396 MB
+# Available Virtual :12379 MB
 #-----------------------------------------------------------
 source system.tcl -notrace
-create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 523.512 ; gain = 238.332
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 523.590 ; gain = 238.973
 Command: read_checkpoint -auto_incremental -incremental C:/finalproject/finalproject.srcs/utils_1/imports/synth_1/system.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/finalproject/finalproject.srcs/utils_1/imports/synth_1/system.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -36,9 +36,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 20916
+INFO: [Synth 8-7075] Helper process launched with PID 6736
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1374.598 ; gain = 448.965
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1374.645 ; gain = 448.648
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-11121] redeclaration of ANSI port 'segments' is not allowed [C:/finalproject/finalproject.srcs/sources_1/new/hexTo7Segment.v:28]
 INFO: [Synth 8-11241] undeclared symbol 'baud', assumed default net type 'wire' [C:/finalproject/finalproject.srcs/sources_1/new/system.v:21]
@@ -96,24 +96,81 @@ INFO: [Synth 8-155] case statement is not full and has no default [C:/finalproje
 INFO: [Synth 8-6155] done synthesizing module 'ascii_rom' (0#1) [C:/finalproject/finalproject.srcs/sources_1/new/ascii_rom.v:1]
 INFO: [Synth 8-6157] synthesizing module 'baud_rate_sync_with_en2' [C:/finalproject/finalproject.srcs/sources_1/new/baud_rate_sync.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'baud_rate_sync_with_en2' (0#1) [C:/finalproject/finalproject.srcs/sources_1/new/baud_rate_sync.v:1]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:191]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:191]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:191]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:191]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:191]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:191]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:191]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:191]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:191]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:191]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:191]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:191]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:191]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:191]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:191]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:191]
+WARNING: [Synth 8-6090] variable 'index' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:192]
+WARNING: [Synth 8-6090] variable 'index_offset' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:196]
+WARNING: [Synth 8-6090] variable 'line_num' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:197]
+WARNING: [Synth 8-6090] variable 'index' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:198]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:201]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:201]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:201]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:201]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:201]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:201]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:201]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:201]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:201]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:201]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:201]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:201]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:201]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:201]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:201]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:201]
+WARNING: [Synth 8-6090] variable 'index' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:202]
+WARNING: [Synth 8-6090] variable 'index_offset' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:208]
+WARNING: [Synth 8-6090] variable 'line_num' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:209]
+WARNING: [Synth 8-6090] variable 'index' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:210]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:213]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:213]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:213]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:213]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:213]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:213]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:213]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:213]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:213]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:213]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:213]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:213]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:213]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:213]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:213]
+WARNING: [Synth 8-6090] variable 'readAscii' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:213]
+WARNING: [Synth 8-6090] variable 'index' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:214]
 INFO: [Synth 8-6155] done synthesizing module 'vga_test' (0#1) [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'system' (0#1) [C:/finalproject/finalproject.srcs/sources_1/new/system.v:1]
 WARNING: [Synth 8-7129] Port clk in module textGeneration is either unconnected or has no load
 WARNING: [Synth 8-7129] Port reset in module textGeneration is either unconnected or has no load
 WARNING: [Synth 8-7129] Port data_in[7] in module vga_test is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1499.312 ; gain = 573.680
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1498.637 ; gain = 572.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1499.312 ; gain = 573.680
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1498.637 ; gain = 572.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1499.312 ; gain = 573.680
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1498.637 ; gain = 572.641
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1499.312 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1498.637 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -166,32 +223,32 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1594.473 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1598.020 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1594.473 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1598.020 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1594.473 ; gain = 668.840
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1598.020 ; gain = 672.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1594.473 ; gain = 668.840
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1598.020 ; gain = 672.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1594.473 ; gain = 668.840
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1598.020 ; gain = 672.023
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [C:/finalproject/finalproject.srcs/sources_1/new/ascii_rom.v:18]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1594.473 ; gain = 668.840
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1598.020 ; gain = 672.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -200,26 +257,29 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input   32 Bit       Adders := 12    
 	   3 Input   11 Bit       Adders := 32    
-	   2 Input   11 Bit       Adders := 8     
+	   2 Input   11 Bit       Adders := 7     
 	   2 Input   10 Bit       Adders := 34    
 	   2 Input    8 Bit       Adders := 2     
 	   2 Input    6 Bit       Adders := 1     
 	   2 Input    2 Bit       Adders := 2     
 +---Registers : 
+	               32 Bit    Registers := 3     
 	               11 Bit    Registers := 1     
-	               10 Bit    Registers := 4     
+	               10 Bit    Registers := 3     
 	                8 Bit    Registers := 5     
-	                7 Bit    Registers := 1     
+	                7 Bit    Registers := 17    
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 17    
 +---Muxes : 
-	   2 Input   32 Bit        Muxes := 7     
+	   2 Input   32 Bit        Muxes := 10    
 	   5 Input   12 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 1     
-	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
 	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
 	   4 Input    1 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 19    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -240,236 +300,27 @@ WARNING: [Synth 8-3917] design system has port dp driven by constant 0
 WARNING: [Synth 8-7129] Port clk in module textGeneration is either unconnected or has no load
 WARNING: [Synth 8-7129] Port reset in module textGeneration is either unconnected or has no load
 WARNING: [Synth 8-7129] Port data_in[7] in module vga_test is either unconnected or has no load
-WARNING: [Synth 8-3332] Sequential element (data_reg[7]) is unused and will be removed from module ascii_rom.
-WARNING: [Synth 8-3332] Sequential element (data_reg[6]) is unused and will be removed from module ascii_rom.
-WARNING: [Synth 8-3332] Sequential element (data_reg[5]) is unused and will be removed from module ascii_rom.
-WARNING: [Synth 8-3332] Sequential element (data_reg[4]) is unused and will be removed from module ascii_rom.
-WARNING: [Synth 8-3332] Sequential element (data_reg[3]) is unused and will be removed from module ascii_rom.
-WARNING: [Synth 8-3332] Sequential element (data_reg[2]) is unused and will be removed from module ascii_rom.
-WARNING: [Synth 8-3332] Sequential element (data_reg[1]) is unused and will be removed from module ascii_rom.
 WARNING: [Synth 8-3332] Sequential element (data_reg[0]) is unused and will be removed from module ascii_rom.
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[31]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[30]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[29]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[28]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[27]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[26]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[25]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[24]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[23]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[22]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[21]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[20]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[19]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[18]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[17]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[16]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[15]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[14]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[13]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[12]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[11]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[10]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[9]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[8]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[7]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[6]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[5]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[4]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[3]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[2]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[1]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/index_reg[0]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:163]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[31]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[30]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[29]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[28]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[27]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[26]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[25]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[24]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[23]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[22]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[21]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[20]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[19]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[18]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[17]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[16]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[15]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'vga_inst/line_num_reg[14]__0/Q' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:165]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/finalproject/finalproject.srcs/sources_1/new/vga_display.v:47]
-INFO: [Common 17-14] Message 'Synth 8-6858' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1594.473 ; gain = 668.840
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1598.020 ; gain = 672.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1594.473 ; gain = 668.840
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1598.020 ; gain = 672.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1594.473 ; gain = 668.840
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1598.020 ; gain = 672.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1594.473 ; gain = 668.840
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1598.020 ; gain = 672.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -487,37 +338,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1594.473 ; gain = 668.840
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1598.020 ; gain = 672.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1594.473 ; gain = 668.840
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1598.020 ; gain = 672.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1594.473 ; gain = 668.840
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1598.020 ; gain = 672.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1594.473 ; gain = 668.840
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1598.020 ; gain = 672.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1594.473 ; gain = 668.840
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1598.020 ; gain = 672.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1594.473 ; gain = 668.840
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1598.020 ; gain = 672.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -534,42 +385,46 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     2|
-|2     |CARRY4 |    16|
-|3     |LUT1   |     8|
-|4     |LUT2   |    17|
-|5     |LUT3   |    20|
-|6     |LUT4   |    21|
-|7     |LUT5   |    18|
-|8     |LUT6   |    31|
-|9     |MUXF7  |     1|
-|10    |FDCE   |    24|
-|11    |FDRE   |    85|
-|12    |IBUF   |    12|
-|13    |OBUF   |    27|
+|2     |CARRY4 |   216|
+|3     |LUT1   |   281|
+|4     |LUT2   |   299|
+|5     |LUT3   |    37|
+|6     |LUT4   |   120|
+|7     |LUT5   |    52|
+|8     |LUT6   |   201|
+|9     |MUXF7  |    30|
+|10    |MUXF8  |     9|
+|11    |FDCE   |    27|
+|12    |FDRE   |   214|
+|13    |FDSE   |    28|
+|14    |LD     |     7|
+|15    |IBUF   |    12|
+|16    |OBUF   |    27|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1594.473 ; gain = 668.840
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1598.020 ; gain = 672.023
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 624 critical warnings and 14 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1594.473 ; gain = 573.680
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1594.473 ; gain = 668.840
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 1598.020 ; gain = 572.641
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1598.020 ; gain = 672.023
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1594.473 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1598.020 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 262 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1594.473 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1598.020 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 7 instances were transformed.
+  LD => LDCE: 7 instances
 
-Synth Design complete | Checksum: 897cd97f
+Synth Design complete | Checksum: da5ee84c
 INFO: [Common 17-83] Releasing license: Synthesis
-54 Infos, 59 Warnings, 214 Critical Warnings and 0 Errors encountered.
+52 Infos, 109 Warnings, 14 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1594.473 ; gain = 1064.008
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1598.020 ; gain = 1067.469
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1594.473 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1598.020 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/finalproject/finalproject.runs/synth_1/system.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Dec  6 18:28:27 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  6 18:38:43 2024...
