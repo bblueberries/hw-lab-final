@@ -63,3 +63,13 @@
     <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="23488" HostCore="8" HostMemory="016841801728">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="24084" HostCore="8" HostMemory="016841801728">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="15536" HostCore="8" HostMemory="016841801728">
+    </Process>
+</ProcessHandle>

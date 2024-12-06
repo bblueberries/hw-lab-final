@@ -25,7 +25,7 @@ module system(
     wire reset;
     singlePulser button(press,btnU,baud);
 //    singlePulser button2(reset,btnD,clk);
-    reg en, last_rec;
+    reg en, last_rec,last_btnU;
     reg [7:0] data_in;
     wire [7:0] data_out;
     wire [7:0] data_out_2;
@@ -34,20 +34,16 @@ module system(
     baudrate_gen baudrate_gen(clk, baud);
     uart_rx receiver(baud, JB[0], received, data_out);
     uart_tx transmitter(baud, data_in, en, sent, Tx);
-//    uart_tx transmitter(baud, btnD, data_in, en, RsTx);
-//    uart_rx receiver(baud, btnD , RsRx, data_out, received);
-//    uart_rx receiver_2(baud, btnD , JB[1], data_out_2, received_2);
-    
-//    uart_rx receiver(baud, btnD , JB[0], data_out, received);
-//    uart_tx transmitter(baud, btnD, data_in, en, Tx);
+
     reg [7:0] data_to_vga;
     always @(posedge baud) begin
         if (en) en = 0;
         if (~last_rec & received) begin //receive
             data_to_vga = data_out;
         end
+        if (~last_btnU&btnU) begin data_in = sw[7:0]; en=1; end //send
         last_rec = received;
-        if (press) begin data_in = sw[7:0]; en=1; end //send
+        last_btnU = btnU;
     end
     
     assign num0 = data_to_vga[3:0];
@@ -64,7 +60,7 @@ module system(
         .reset(btnD),
         .en(received),
         .rgb(rgb),
-        .data_in(data_to_vga),
+        .data_in(data_to_vga)
     );
 
 endmodule

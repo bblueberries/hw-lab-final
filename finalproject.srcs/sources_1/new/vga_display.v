@@ -3,7 +3,7 @@ module vga_test
 		input wire clk, reset,en,
 		output wire hsync, vsync,
 		output wire [11:0] rgb,
-		input [7:0] data_in,
+		input [7:0] data_in
 	);
 	
 //	assign JB[0] = RsTx;
