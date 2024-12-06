@@ -43,12 +43,11 @@ module system(
     reg [7:0] data_to_vga;
     always @(posedge baud) begin
         if (en) en = 0;
-        if (~last_rec & received) begin
-            data_to_vga = data_out; // need to fix
-            en = 1;
+        if (~last_rec & received) begin //receive
+            data_to_vga = data_out;
         end
         last_rec = received;
-        if (press) begin data_in = sw[7:0]; en=1; end
+        if (press) begin data_in = sw[7:0]; en=1; end //send
     end
     
     assign num0 = data_to_vga[3:0];
@@ -63,13 +62,9 @@ module system(
         .hsync(hsync),
         .vsync(vsync),
         .reset(btnD),
-        .en(en),
+        .en(received),
         .rgb(rgb),
         .data_in(data_to_vga),
-        .RsTx(RsTx),
-        .RsRx(RsRx),
-        .JB(JB),
-        .baud(baud)
     );
 
 endmodule

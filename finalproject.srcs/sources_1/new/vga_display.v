@@ -4,10 +4,6 @@ module vga_test
 		output wire hsync, vsync,
 		output wire [11:0] rgb,
 		input [7:0] data_in,
-		input wire RsTx,
-		input wire RsRx,
-		input wire [1:0] JB,
-		input wire baud
 	);
 	
 //	assign JB[0] = RsTx;
