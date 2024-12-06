@@ -33,11 +33,13 @@ module system(
     uart_rx receiver(baud, JB[0], received, data_out);
     uart_tx transmitter(baud, data_in, en, sent, Tx);
 
-    reg [7:0] data_to_vga;
+
+    reg enRead;
     always @(posedge baud) begin
         if (en) en = 0;
+        if(enRead) enRead=0;
         if (~last_rec & received) begin //receive
-            data_to_vga = data_out;
+            enRead=1;
         end
         if (press) begin 
             data_in = sw[7:0];
@@ -46,8 +48,8 @@ module system(
         last_rec = received;
     end
     
-    assign num0 = data_to_vga[3:0];
-    assign num1 = data_to_vga[7:4];
+    assign num0 = data_out[3:0];
+    assign num1 = data_out[7:4];
     assign num2 = data_in[3:0];
     assign num3 = data_in[7:4];
     quadSevenSeg q7seg(seg,dp,an0,an1,an2,an3,num0,num1,num2,num3,baud);
@@ -57,9 +59,9 @@ module system(
         .hsync(hsync),
         .vsync(vsync),
         .reset(btnD),
-        .en(received),
+        .en(enRead),
         .rgb(rgb),
-        .data_in(data_to_vga)
+        .data_in(data_out)
     );
 
 endmodule

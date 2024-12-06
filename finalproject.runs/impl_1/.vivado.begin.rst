@@ -13,3 +13,48 @@
     <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="17516" HostCore="8" HostMemory="016841801728">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="23792" HostCore="8" HostMemory="016841801728">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="21424" HostCore="8" HostMemory="016841801728">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="8756" HostCore="8" HostMemory="016841801728">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="8404" HostCore="8" HostMemory="016841801728">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="20716" HostCore="8" HostMemory="016841801728">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="9440" HostCore="8" HostMemory="016841801728">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="23556" HostCore="8" HostMemory="016841801728">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="12992" HostCore="8" HostMemory="016841801728">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="23200" HostCore="8" HostMemory="016841801728">
+    </Process>
+</ProcessHandle>
