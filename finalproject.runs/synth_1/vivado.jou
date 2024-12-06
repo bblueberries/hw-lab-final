@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Wed Dec  4 16:00:23 2024
-# Process ID: 24844
+# Start of session at: Fri Dec  6 18:27:39 2024
+# Process ID: 11332
 # Current directory: C:/finalproject/finalproject.runs/synth_1
 # Command line: vivado.exe -log system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
 # Log file: C:/finalproject/finalproject.runs/synth_1/system.vds
@@ -19,6 +19,6 @@
 # Host memory       :16841 MB
 # Swap memory       :9126 MB
 # Total Virtual     :25968 MB
-# Available Virtual :9851 MB
+# Available Virtual :12396 MB
 #-----------------------------------------------------------
 source system.tcl -notrace

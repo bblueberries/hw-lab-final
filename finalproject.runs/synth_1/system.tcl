@@ -75,11 +75,14 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
+  C:/finalproject/finalproject.srcs/sources_1/new/ascii_rom.v
+  C:/finalproject/finalproject.srcs/sources_1/new/baud_rate_sync.v
   C:/finalproject/finalproject.srcs/sources_1/new/baudrate_gen.v
-  C:/finalproject/finalproject.srcs/sources_1/new/font_ram.v
+  C:/finalproject/finalproject.srcs/sources_1/new/counter.v
   C:/finalproject/finalproject.srcs/sources_1/new/hexTo7Segment.v
   C:/finalproject/finalproject.srcs/sources_1/new/quadSevenSeg.v
   C:/finalproject/finalproject.srcs/sources_1/new/singlePulser.v
+  C:/finalproject/finalproject.srcs/sources_1/new/textGeneration.v
   C:/finalproject/finalproject.srcs/sources_1/new/uart_rx.v
   C:/finalproject/finalproject.srcs/sources_1/new/uart_tx.v
   C:/finalproject/finalproject.srcs/sources_1/new/vga_controller.v
