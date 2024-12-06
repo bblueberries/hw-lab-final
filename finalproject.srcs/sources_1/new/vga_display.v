@@ -6,13 +6,6 @@ module vga_test
 		input [7:0] data_in
 	);
 	
-//	assign JB[0] = RsTx;
-//	reg tx_start;
-	///UART/////////////////////////////////
-//	uart_tx  tx_inst (.clk(baud), .reset(reset), .tx_data(data_in), .tx_start(tx_start), .tx_out(RsTx));
-//	uart_rx  rx_inst (.clk(baud), .reset(reset), .rx_in(RsRx), .rx_data(), .rx_ready());
-//	uart_rx  rx_inst_2 (.clk(baud), .reset(reset), .rx_in(JB[1]), .rx_data(), .rx_ready());
-	
 	//VGA/////////////////////////////////////////////////////////////////////////////
 	// video status output from vga_sync to tell when to route out rgb signal to DAC
 	wire video_on;
@@ -98,9 +91,7 @@ module vga_test
         
          textGeneration c15 (.clk(clk),.reset(reset),.asciiData(a[15]), .ascii_In(readAscii[15]),
         .x(x),.y(y), .displayContents(d[15]), .x_desired(x_desired+56), .y_desired(y_desired+16));
-        
-//         textGeneration c8 (.clk(clk),.reset(reset),.asciiData(a[8]), .ascii_In(counterValue),
-//        .x(x),.y(y), .displayContents(d[8]), .x_desired(10'd152), .y_desired(10'd80));         
+            
 
 //Decoder to trigger displayContents signal high or low depending on which ASCII char is reached
     assign displayContents = d[0] ? d[0] :

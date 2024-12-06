@@ -1,75 +1,15 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="8464" HostCore="8" HostMemory="016841801728">
+    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="22832" HostCore="8" HostMemory="016841801728">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="16480" HostCore="8" HostMemory="016841801728">
+    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="6768" HostCore="8" HostMemory="016841801728">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="5904" HostCore="8" HostMemory="016841801728">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="412" HostCore="8" HostMemory="016841801728">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="19960" HostCore="8" HostMemory="016841801728">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="17444" HostCore="8" HostMemory="016841801728">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="3264" HostCore="8" HostMemory="016841801728">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="21604" HostCore="8" HostMemory="016841801728">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="7324" HostCore="8" HostMemory="016841801728">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="9292" HostCore="8" HostMemory="016841801728">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="17004" HostCore="8" HostMemory="016841801728">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="8308" HostCore="8" HostMemory="016841801728">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="23488" HostCore="8" HostMemory="016841801728">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="24084" HostCore="8" HostMemory="016841801728">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="15536" HostCore="8" HostMemory="016841801728">
+    <Process Command="vivado.bat" Owner="ADVICE" Host="LAPTOP-JUPAP5OS" Pid="17516" HostCore="8" HostMemory="016841801728">
     </Process>
 </ProcessHandle>

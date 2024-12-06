@@ -5,17 +5,16 @@ module system(
     input [7:0] sw, // for inc , dec 4 7-Seg // 7 is the most left
     input btnU,
     input btnD,
-    input [1:0] JB,
+    inout [1:0] JB,
     output [6:0] seg,
     output dp,
     output [3:0] an,
-
 	output wire hsync, vsync,
 	output wire [11:0] rgb
 );
 
-    assign JB[1] = Tx;
     wire Tx;
+    assign JB[1] = Tx;
     
     wire [3:0] num3,num2,num1,num0; // left to right
   
@@ -24,12 +23,11 @@ module system(
     wire press;
     wire reset;
     singlePulser button(press,btnU,baud);
-//    singlePulser button2(reset,btnD,clk);
-    reg en, last_rec,last_btnU;
+    reg en, last_rec;
     reg [7:0] data_in;
     wire [7:0] data_out;
     wire [7:0] data_out_2;
-    wire sent, received, received_2, baud;
+    wire sent, received , baud;
     
     baudrate_gen baudrate_gen(clk, baud);
     uart_rx receiver(baud, JB[0], received, data_out);
@@ -41,9 +39,11 @@ module system(
         if (~last_rec & received) begin //receive
             data_to_vga = data_out;
         end
-        if (~last_btnU&btnU) begin data_in = sw[7:0]; en=1; end //send
+        if (press) begin 
+            data_in = sw[7:0];
+            en=1; 
+        end //send
         last_rec = received;
-        last_btnU = btnU;
     end
     
     assign num0 = data_to_vga[3:0];
@@ -52,7 +52,6 @@ module system(
     assign num3 = data_in[7:4];
     quadSevenSeg q7seg(seg,dp,an0,an1,an2,an3,num0,num1,num2,num3,baud);
     
-
     vga_test vga_inst (
         .clk(clk),
         .hsync(hsync),
